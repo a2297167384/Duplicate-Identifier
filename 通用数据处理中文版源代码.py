@@ -316,9 +316,9 @@ class DuplicateDataIdentifierApp:
                 nondup_summary_file = os.path.join(self.output_folder.get(), f"{self.nondup_summary.get()}.xlsx")
                 nondup_summary_df.to_excel(nondup_summary_file, index=False)
 
-            messagebox.showinfo("成功", "处理完成！请检查输出文件夹。")
+            messagebox.showinfo("成功"! "处理完成！请检查输出文件夹。")
         except Exception as e:
-            messagebox.showerror("错误", f"处理过程中出现错误：{e}")
+            messagebox.showerror("错误"！ f"处理过程中出现错误：{e}")
 
 
 if __name__ == "__main__":
