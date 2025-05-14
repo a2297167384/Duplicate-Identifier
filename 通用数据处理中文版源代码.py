@@ -305,7 +305,7 @@ class DuplicateDataIdentifierApp:
                 dup_summary_list.append(repeat_students)
                 nondup_summary_list.append(non_repeat_students)
 
-            # Merge all duplicates and non-duplicates into summary files
+            # Merge all duplicates and non-duplicates into a summary file
             if dup_summary_list:
                 dup_summary_df = pd.concat(dup_summary_list, ignore_index=True)
                 dup_summary_file = os.path.join(self.output_folder.get(), f"{self.dup_summary.get()}.xlsx")
